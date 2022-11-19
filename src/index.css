@@ -1,0 +1,458 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.div-header-button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  gap: 41px;
+}
+@media (max-width: 1235px) {
+  .options-button {
+    font-size: 12px;
+    width: 80px;
+    padding: 0 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .div-icone-wasfaty {
+    margin-left: 19px !important;
+  }
+  .img-header {
+    width: 58px;
+  }
+  .div-header-button {
+    gap: 17px !important;
+  }
+  .div-images-button {
+    margin-left: 0px !important;
+  }
+  .div-buttons {
+    gap: 20px !important;
+    margin-left: 18px !important;
+  }
+  .show {
+    margin-top: 24px !important;
+  }
+  .showRegister {
+    margin-top: 14px !important;
+  }
+
+  .img-wasfaty-box {
+    width: 56px;
+  }
+  .login-text,
+  .Register-text {
+    height: 35px !important;
+  }
+  .TextField-confirmPassword,
+  .TextField-newPassword,
+  .TextField-ID-login,
+  .TextField-password-login,
+  .TextField-ID,
+  .TextField-Email,
+  .TextField-mobileNumber,
+  .TextField-password {
+    padding: 0.5rem 4rem !important;
+  }
+  .login-box {
+    height: 329px !important;
+  }
+
+  .code-box {
+    height: 380px !important;
+  }
+  .TextField-confirmPassword {
+    margin-bottom: 0 !important;
+  }
+  .button-signin,
+  .button-confirm {
+    padding: 0.5rem 1.2rem !important;
+  }
+  .logo-img {
+    margin-bottom: 9px !important;
+  }
+  .welcome-box {
+    height: 317px !important;
+  }
+  .TextField-codeConfirm {
+    width: 58px !important;
+    height: 58px !important;
+  }
+  .div-confirmCode-input {
+    width: 305px !important;
+  }
+  .div-confirm-text {
+    font-size: 13px !important;
+    margin-top: 11px !important;
+  }
+  .Rigister-box {
+    height: 417px !important;
+  }
+
+  .button-resendCode {
+    padding: 0 !important;
+  }
+  .Register-forget-text{
+    padding-top: 5px !important;
+  }
+  
+}
+
+.div-icone-wasfaty {
+  margin-left: 189px;
+}
+
+.div-buttons {
+  display: flex;
+  gap: 53px;
+  margin-left: 41px;
+}
+
+.div-images-button {
+  display: flex;
+  gap: 18px;
+  margin-left: 54px;
+}
+
+.div-images-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.div-image-background {
+  width: 100%;
+}
+
+.image-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: inherit;
+}
+
+.show {
+  z-index: 2;
+  display: block;
+  transition: 800ms;
+  opacity: 1;
+  position: absolute;
+  left: 38%;
+  margin-top: 77px;
+}
+
+.showRegister {
+  display: block;
+  transition: 800ms;
+  z-index: 2;
+  /* margin-left: auto;
+    margin-right: auto;
+    width: fit-content; */
+  position: absolute;
+  left: 38%;
+  margin-top: 77px;
+}
+.showRegister.activeRegister {
+  transform: translateY(100px) scale(0) rotateY(180deg);
+  opacity: 0;
+  z-index: 2;
+}
+.show.active {
+  z-index: 2;
+  transform: translateY(100px) scale(0) rotateY(180deg);
+  opacity: 0;
+}
+.forgetPassword-box,
+.login-box {
+  height: 391px;
+  border-radius: 15px;
+  width: 352px;
+  background-color: white;
+}
+.welcome-box {
+  height: 361px;
+  border-radius: 15px;
+  width: 352px;
+  background-color: white;
+}
+.Rigister-box {
+  border-radius: 15px;
+  width: 352px;
+  background-color: white;
+  height: 518px;
+}
+.code-box {
+  height: 449px;
+  border-radius: 15px;
+  width: 352px;
+  background-color: white;
+}
+.div-text-thank {
+  padding-top: 5px !important;
+}
+.div-thank {
+  height: 35px !important;
+}
+.start-text {
+  height: 40px !important;
+}
+
+.Register-text {
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  color: #1b2346;
+  background-color: #f0f3f7;
+  height: 50px;
+}
+
+.login-text {
+  z-index: 2;
+
+  border-radius: 8px;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: #1b2346;
+}
+
+h1 {
+  width: 112px;
+}
+
+.logo-img {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 21px;
+  margin-bottom: 18px;
+}
+
+.form-box {
+  width: 322px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-signin {
+  width: 322px;
+}
+
+.div-sign-Register {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.h5-Signin {
+  position: absolute;
+  margin: 0;
+  padding-top: 4%;
+  padding-left: 17%;
+}
+
+.h5-Register {
+  position: absolute;
+  margin: 0;
+  padding-top: 4%;
+  padding-left: 11%;
+}
+
+.TextField-confirmPassword,
+.TextField-newPassword,
+.TextField-ID-login,
+.TextField-password-login {
+  margin-bottom: 15px;
+}
+
+.div-Checkbox {
+  display: flex;
+  gap: 10px;
+}
+.Register-forget-text{
+  padding-top: 10px;
+}
+
+.forget-text {
+  background-Color:#1b2346;
+color:white;
+      box-shadow:  0px 3px 6px #1B23464D;     
+             
+             
+              
+             
+}
+
+.Checkbox-button {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button,
+.img-header {
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input{
+  outline: -webkit-focus-ring-color auto 0px;
+
+}
+/* .div-button-reg{
+  margin-top: 15px;
+} */
+.TextField-Reg {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: fit-content;
+  gap: 15px;
+}
+
+.div-error {
+  margin-bottom: auto;
+  margin-left: 6px;
+  color: #d80d0d;
+  margin-bottom: -5px;
+  font-size: 11px;
+}
+
+.div-confirm-text {
+  width: 322px;
+  text-align: center;
+  margin-top: 22px;
+
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+.div-counterTime {
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  gap: 4px;
+  color: #ff8100;
+}
+
+.TextField-codeConfirm {
+  width: 70px;
+  height: 70px;
+  padding: 0 !important;
+  font-size: 48px;
+
+  text-align: center;
+  max-lines: 1;
+}
+.div-confirmCode-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 322px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-confirm {
+  width: 322px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-confirm-button {
+  margin-top: 27px;
+  width: 322px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-box {
+  height: 391px;
+}
+
+.div-Resend {
+  font-size: 16px;
+  color: #e05729;
+  margin-top: 11px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.div-back-button {
+  margin-top: 13px;
+  text-align: center;
+}
+
+.div-thank,
+.div-rest-password {
+  height: 45px;
+  width: 352px;
+  background: #1b2346;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.div-text-thank,
+.div-text-password {
+  padding-top: 10px;
+}
+
+.div-text-WasfatiPlus {
+  font-size: 18px;
+  color: #46a200;
+  text-align: center;
+}
+
+.div-start-button {
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.start-text {
+  height: 50px;
+  width: 322px;
+}
+
+.input-passwords {
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ul-password-validation {
+  font-size: 12px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.div-password-validation {
+}
